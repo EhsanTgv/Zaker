@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:layoutDirection="ltr"
+    app:cardBackgroundColor="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+
+        <TextView
+            android:id="@+id/dialogChosenMentionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standardMargin"
+            android:layout_marginTop="@dimen/standardMargin"
+            android:layout_marginEnd="@dimen/standardMargin"
+            android:text="@string/chosenDialogText"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dialogFontSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/dialogChosenMentionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standardMargin"
+            android:layout_marginTop="@dimen/halfMargin"
+            android:layout_marginEnd="@dimen/standardMargin"
+            android:backgroundTint="@color/red"
+            android:ems="10"
+            android:textSize="@dimen/menuFontSize"
+            android:hint="@string/chosenMention"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/red30"
+            android:theme="@style/redCursorStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogChosenMentionTitle"
+            tools:targetApi="lollipop" />
+
+        <EditText
+            android:id="@+id/dialogChosenMentionValue"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/menuFontSize"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standardMargin"
+            android:layout_marginTop="@dimen/halfMargin"
+            android:layout_marginEnd="@dimen/standardMargin"
+            android:backgroundTint="@color/red"
+            android:ems="10"
+            android:hint="@string/mentionCount"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColorHighlight="@color/red30"
+            android:theme="@style/redCursorStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogChosenMentionText"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/dialogChosenMentionSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/standardMargin"
+            android:layout_marginTop="@dimen/halfMargin"
+            android:layout_marginEnd="@dimen/standardMargin"
+            android:layout_marginBottom="@dimen/standardMargin"
+            android:background="@drawable/red_button"
+            android:paddingStart="@dimen/separateMargin"
+            android:paddingTop="@dimen/space"
+            android:paddingEnd="@dimen/separateMargin"
+            android:paddingBottom="@dimen/space"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogChosenMentionValue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    //Size
+    <dimen name="buttonSize">50dp</dimen>
+    <dimen name="shadowSize">8dp</dimen>
+
+    //Margin
+    <dimen name="standardMargin">14dp</dimen>
+    <dimen name="standardMarginX2">32dp</dimen>
+    <dimen name="decoViewMargin">42dp</dimen>
+    <dimen name="separateMargin">20dp</dimen>
+    <dimen name="halfMargin">8dp</dimen>
+    <dimen name="space">4dp</dimen>
+
+    //FontSize
+    <dimen name="titleFontSize">20sp</dimen>
+    <dimen name="mentionFontSize">28sp</dimen>
+    <dimen name="detailFontSize">14sp</dimen>
+    <dimen name="menuFontSize">16sp</dimen>
+    <dimen name="dialogFontSize">12sp</dimen>
+</resources>

@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">Zaker</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_title" translatable="false">fcm_default_channel</string>
+
+    <string name="tap_zone">Tap Zone</string>
+    <string name="default_mention_number">100</string>
+    <string name="setting_button">Setting Button</string>
+    <string name="close">بستن</string>
+    <string name="chosenMention">ذکر دلخواه</string>
+    <string name="subhanAllah">سبحان الله</string>
+    <string name="remindedMentions">ذکر های باقی مانده</string>
+    <string name="backButton">دکمه بازگشت</string>
+    <string name="edit">ویرایش</string>
+    <string name="fatimasMention">تسبیحات حضرت زهرا (س)</string>
+    <string name="allahuAkbarText">الله اكبر :</string>
+    <string name="alhamdulillahText">الحمدالله :</string>
+    <string name="subhanAllahText">سبحان الله :</string>
+    <string name="_34">34</string>
+    <string name="_33">33</string>
+    <string name="restart">تازه سازی</string>
+    <string name="aboutUs">درباره ما</string>
+    <string name="dailyMentions">ذکر های ایام هفته</string>
+    <string name="salawatCounter">صلوات شمار</string>
+    <string name="salawat">اللهم صل علی محمد و آل محمد</string>
+    <string name="settings">تنظیمات</string>
+    <string name="vibrate">لرزش</string>
+    <string name="notification">یادآوری</string>
+    <string name="contactUs">تماس با ما</string>
+    <string name="chosenDialogText">لطفاً ذکر و تعداد آن را وارد نمایید</string>
+    <string name="mentionCount">تعداد ذکر</string>
+    <string name="submit">ثبت</string>
+    <string name="salawatDialogText">لطفاً تعداد صلوات را وارد نمایید</string>
+    <string name="salawatCount">تعداد صلوات</string>
+    <string name="tabs">تب ها</string>
 </resources>

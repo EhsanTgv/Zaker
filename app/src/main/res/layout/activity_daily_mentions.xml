@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".views.activities.DailyMentionsActivity">
+
+    <TextView
+        android:id="@+id/dailyMentionsActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:text="@string/dailyMentions"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/titleFontSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hookedonplay.decoviewlib.DecoView
+        android:id="@+id/dailyMentionsDecoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/decoViewMargin"
+        android:layout_marginEnd="@dimen/decoViewMargin"
+        android:contentDescription="@string/tap_zone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/dailyMentionsMentionText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingStart="@dimen/standardMargin"
+        android:paddingEnd="@dimen/standardMargin"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/mentionFontSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dailyMentionsDecoView"
+        app:layout_constraintEnd_toEndOf="@+id/dailyMentionsDecoView"
+        app:layout_constraintStart_toStartOf="@+id/dailyMentionsDecoView"
+        app:layout_constraintTop_toTopOf="@+id/dailyMentionsDecoView"
+        tools:text="اللهم صل علی محمد و آل محمد" />
+
+    <TextView
+        android:id="@+id/dailyMentionsRemindedMentions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/separateMargin"
+        android:text="@string/remindedMentions"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/detailFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyMentionsDecoView" />
+
+    <TextView
+        android:id="@+id/dailyMentionsMentionCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/halfMargin"
+        android:text="@string/default_mention_number"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/detailFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyMentionsRemindedMentions" />
+
+    <ImageView
+        android:id="@+id/dailyMentionsSettingButton"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:contentDescription="@string/setting_button"
+        android:padding="@dimen/standardMargin"
+        android:src="@drawable/yellow_gear_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dailyMentionsBackButton"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:contentDescription="@string/backButton"
+        android:padding="@dimen/standardMargin"
+        android:src="@drawable/yellow_back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dailyMentionsRestartButton"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:layout_marginEnd="@dimen/separateMargin"
+        android:layout_marginBottom="@dimen/separateMargin"
+        android:background="@drawable/yellow_circle"
+        android:contentDescription="@string/edit"
+        android:elevation="@dimen/shadowSize"
+        android:padding="@dimen/standardMargin"
+        android:src="@drawable/refresh_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="lollipop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

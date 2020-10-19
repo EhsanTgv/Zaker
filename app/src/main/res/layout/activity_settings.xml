@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".views.activities.SettingsActivity">
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/buttonSize"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/titleFontSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/settingsVibrateCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/halfMargin"
+        android:layout_marginTop="@dimen/halfMargin"
+        android:layout_marginEnd="@dimen/halfMargin"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/halfMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsTitle">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/halfMargin"
+            android:layout_marginTop="@dimen/halfMargin"
+            android:layout_marginEnd="@dimen/halfMargin"
+            android:layout_marginBottom="@dimen/halfMargin"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingsTitle">
+
+            <ImageView
+                android:id="@+id/vibrateIcon"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:contentDescription="@string/vibrate"
+                android:padding="@dimen/standardMargin"
+                android:src="@drawable/dark_red_vibrate_icon" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/vibrateSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/halfMargin"
+                android:layoutDirection="rtl"
+                android:text="@string/vibrate"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/detailFontSize" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/settingsNotificationCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/halfMargin"
+        android:layout_marginTop="@dimen/halfMargin"
+        android:layout_marginEnd="@dimen/halfMargin"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/halfMargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsVibrateCardView">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/halfMargin"
+            android:layout_marginTop="@dimen/halfMargin"
+            android:layout_marginEnd="@dimen/halfMargin"
+            android:layout_marginBottom="@dimen/halfMargin"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <ImageView
+                android:id="@+id/notificationsIcon"
+                android:layout_width="@dimen/buttonSize"
+                android:layout_height="@dimen/buttonSize"
+                android:contentDescription="@string/notification"
+                android:padding="@dimen/standardMargin"
+                android:src="@drawable/dark_red_notification_icon" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/notificationsSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:text="@string/notification"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/detailFontSize" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:contentDescription="@string/backButton"
+        android:padding="@dimen/standardMargin"
+        android:src="@drawable/dark_red_back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settingsAboutButton"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:gravity="center"
+        android:padding="@dimen/standardMargin"
+        android:text="i"
+        android:textColor="@color/dark_red"
+        android:textSize="@dimen/titleFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/chosenMentionActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:text="@string/chosenMention"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/titleFontSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hookedonplay.decoviewlib.DecoView
+        android:id="@+id/chosenMentionDecoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/decoViewMargin"
+        android:layout_marginEnd="@dimen/decoViewMargin"
+        android:contentDescription="@string/tap_zone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/chosenMentionMentionText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:paddingStart="@dimen/standardMargin"
+        android:paddingEnd="@dimen/standardMargin"
+        android:text="@string/subhanAllah"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/mentionFontSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/chosenMentionDecoView"
+        app:layout_constraintEnd_toEndOf="@+id/chosenMentionDecoView"
+        app:layout_constraintStart_toStartOf="@+id/chosenMentionDecoView"
+        app:layout_constraintTop_toTopOf="@+id/chosenMentionDecoView" />
+
+    <TextView
+        android:id="@+id/chosenMentionRemindedMentions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/separateMargin"
+        android:text="@string/remindedMentions"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/detailFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chosenMentionDecoView" />
+
+    <TextView
+        android:id="@+id/chosenMentionMentionCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/halfMargin"
+        android:text="@string/default_mention_number"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/detailFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chosenMentionRemindedMentions" />
+
+    <ImageView
+        android:id="@+id/chosenMentionSettingButton"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:contentDescription="@string/setting_button"
+        android:padding="@dimen/standardMargin"
+        android:src="@drawable/red_gear_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/chosenMentionBackButton"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:contentDescription="@string/backButton"
+        android:padding="@dimen/standardMargin"
+        android:src="@drawable/red_back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/chosenMentionEditButton"
+        android:layout_width="@dimen/buttonSize"
+        android:layout_height="@dimen/buttonSize"
+        android:layout_marginEnd="@dimen/separateMargin"
+        android:layout_marginBottom="@dimen/separateMargin"
+        android:background="@drawable/red_circle"
+        android:contentDescription="@string/edit"
+        android:elevation="@dimen/shadowSize"
+        android:padding="@dimen/standardMargin"
+        android:src="@drawable/edit_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:targetApi="lollipop" />
+</androidx.constraintlayout.widget.ConstraintLayout>

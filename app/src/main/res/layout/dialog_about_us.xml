@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white_button"
+    android:layoutDirection="ltr">
+
+
+    <TextView
+        android:id="@+id/dialogAboutUsProgrammerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMarginX2"
+        android:layout_marginTop="@dimen/standardMargin"
+        android:layout_marginEnd="@dimen/standardMarginX2"
+        android:text="برنامه نویس: احسان تقوی"
+        android:textSize="@dimen/dialogFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dialogAboutUsProgrammerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMarginX2"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/standardMarginX2"
+        android:autoLink="email"
+        android:text="EhsanTgv@gmail.com"
+        android:textColorLink="@android:color/black"
+        android:textSize="@dimen/dialogFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogAboutUsProgrammerName" />
+
+
+    <TextView
+        android:id="@+id/dialogAboutUsDesignerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standardMarginX2"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/standardMarginX2"
+        android:text="طراح: سهند میرزایی"
+        android:textSize="@dimen/dialogFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogAboutUsProgrammerEmail" />
+
+    <TextView
+        android:id="@+id/dialogAboutUsDesignerEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="24dp"
+        android:autoLink="email"
+        android:text="SahandMirzaei73@gmail.com"
+        android:textColorLink="@android:color/black"
+        android:textSize="@dimen/dialogFontSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogAboutUsDesignerName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
