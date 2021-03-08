@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.taghavi.zaker">
+    package="com.taghavi.zaaker">
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <application
@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".views.activities.SplashActivity"
+            android:name="com.taghavi.zaaker.views.activities.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,22 +22,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".views.activities.DailyMentionsActivity"
+            android:name="com.taghavi.zaaker.views.activities.DailyMentionsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".views.activities.SettingsActivity"
+            android:name="com.taghavi.zaaker.views.activities.SettingsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".views.activities.WelcomeActivity"
+            android:name="com.taghavi.zaaker.views.activities.WelcomeActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".views.activities.SalawatCounterActivity"
+            android:name="com.taghavi.zaaker.views.activities.SalawatCounterActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".views.activities.FatimasMentionsActivity"
+            android:name="com.taghavi.zaaker.views.activities.FatimasMentionsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".views.activities.ChosenMentionActivity"
+            android:name="com.taghavi.zaaker.views.activities.ChosenMentionActivity"
             android:screenOrientation="portrait" />
 
     </application>
